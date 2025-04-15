@@ -4,7 +4,7 @@
 # Ne_avg_virials.py
 #
 # A program to calculate thermophysical properties of the average Neon mixture
-# (c) Giovanni Garberoglio, 2024
+# (c) Giovanni Garberoglio, 2025
 # garberoglio@ectstar.eu
 #
 # If useful, please cite
