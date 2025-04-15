@@ -3,6 +3,8 @@
 
 This repository contains a set of Python3 programs and corresponding data files enabling the calculation of thermophysical properties of noble gases from phase shift and bound state data.
 
+A paper detailing the calculations is being finalized.
+
 ## Main files
 
 The main files are:
