@@ -321,7 +321,7 @@ if __name__ == '__main__':
 
     import argparse
     parser = argparse.ArgumentParser(description='Compute thermophysical pair properties from phase shifts')
-    parser.add_argument('-d', default='He4_phase_shift_data.json.bz2', help='phase shift data file')
+    parser.add_argument('-d', default='data/He4_phase_shift_data.json.bz2', help='phase shift data file')
     parser.add_argument('-T', default='273.16', help='temperature[s] (number | python list | numpy expression)')
     parser.add_argument('-v', type=bool, default=False, help='be verbose')
     

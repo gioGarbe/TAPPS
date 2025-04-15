@@ -41,9 +41,10 @@ class Ne_Average_Mixture():
             for w,x in zip(yij, identifiers):
                 print("weight of B_%9s = %g" % (x, w))
                 print("")
-    
+
+        prefix= "data/"
         suffix = "_phase_shift_data.json.bz2"
-        self.pp     = [tpp.ThermophysicalPairProperties(x+suffix) for x in identifiers]
+        self.pp     = [tpp.ThermophysicalPairProperties(prefix+x+suffix) for x in identifiers]
         
     def B(self,T):
         B_data = [x.B(T) for x in self.pp]
