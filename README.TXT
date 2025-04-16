@@ -107,7 +107,7 @@ USAGE AS A CLASS (in your python programs)
 
 import thermophysicalPairProperties as tpp
 
-datafile='He4_phase_shift_data.json.bz2'
+datafile='data/He4_phase_shift_data.json.bz2'
 pp = tpp.ThermophysicalPairProperties(datafile)
 
 # set the temperature
