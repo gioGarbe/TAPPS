@@ -5,6 +5,8 @@ This repository contains a set of Python3 programs and corresponding data files 
 
 A paper detailing the calculations is being finalized.
 
+This dataset (v1.0.0) is now part of the [NIST Public Data Repository](https://data.nist.gov/od/id/mds2-3802).
+
 ## Main files
 
 The main files are:
