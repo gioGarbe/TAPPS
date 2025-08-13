@@ -2,6 +2,11 @@ thermophysicalPairProperties.py is a Python3 program and class to compute the se
 coefficient B(T), its first and second temperature derivative, and the second acoustic virial
 coefficient of atomic gases or mixtures from phase-shift data.
 
+Dependencies: This software requires the numpy and scipy modules.
+Installation instructions are available at https://numpy.org/install/ and
+https://scipy.org/install/.
+TAPPS has been developed using numpy 1.26 and scipy 1.16.
+
 Description of the files:
 
 *_phase_shift_data.json.bz2:

@@ -18,6 +18,39 @@ The main files are:
   - <sup>20</sup>Ne, <sup>21</sup>Ne, <sup>22</sup>Ne and their cross values, using the pair potential from [Hellmann et al.](https://doi.org/10.1063/5.0047999)
   - <sup>40</sup>Ar using the pair potential from [Lang et al.](https://doi.org/10.1103/PhysRevA.109.052803)
 
+## Dependencies
+
+This software requires [NumPy](https://www.numpy.org) and [SciPy](https://www.scipy.org).   
+Please see the [NumPy installation page](https://numpy.org/install/) or the [SciPy installation
+page](https://scipy.org/install/) for details.
+
+TAPPS has been developed using ``numpy 1.26`` and ``scipy 1.16``.
+
 ## Documentation
 
-The ``README.TXT`` file contains detailed instructions on how to use the Python programs and the classes contained therein.
+The ``README.TXT`` file contains detailed instructions on how to use the Python programs and the
+classes contained therein. 
+
+## Examples
+
+* ``python3 thermophysicalPairProperties.py``: prints the the second virial coefficient, its first
+  two temperature derivatives (multiplied by $T$ and $T^2$, respectively), and the second acoustic
+  virial coefficient for <sup>4</sup>He at $T=273.16$ K. The output should be:
+  ```
+  B_He4(        273.16 )= 11.928088 cm3/mol
+  TdBdT_He4(    273.16 )= -1.077099 cm3/mol
+  T2d2BdT2_He4( 273.16 )= -0.748414 cm3/mol
+  beta_a_He4(   273.16 )= 22.220466 cm3/mol
+  ```
+* ``python3 thermophysicalPairProperties.py -T 300``: prints the the second virial coefficient, its first
+  two temperature derivatives (multiplied by $T$ and $T^2$, respectively), and the second acoustic
+  virial coefficient for <sup>4</sup>He at $T=300$ K 
+* ``python3 thermophysicalPairProperties.py -d data/He3_phase_shift_data.json.bz2``: prints the the
+  second virial coefficient, its first two temperature derivatives (multiplied by $T$ and $T^2$,
+  respectively), and the second acoustic virial coefficient for <sup>3</sup>He at $T=273.16$ K
+* ``python3 thermophysicalPairProperties.py -d data/He3_phase_shift_data.json.bz2 -T 300``: prints the the
+  second virial coefficient, its first two temperature derivatives (multiplied by $T$ and $T^2$,
+  respectively), and the second acoustic virial coefficient for <sup>3</sup>He at $T=300$ K
+
+More examples, including on how to compute the virial coefficients of the average neon mixture
+and/or how to use TAPPS in your Python programs, are available in the ``README.TXT`` file.
