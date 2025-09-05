@@ -3,7 +3,8 @@
 
 This repository contains a set of Python3 programs and corresponding data files enabling the calculation of thermophysical properties of noble gases from phase shift and bound state data.
 
-A paper detailing the calculations is being finalized.
+A paper detailing the calculations [has been published in Metrologia](https://dx.doi.org/10.1088/1681-7575/adfde3):   
+A.H. Harvey and G. Garberoglio. _Avoiding interpolation errors for computed second virial coefficients of noble gases_, Metrologia **62** (2025), 055001.
 
 This dataset (v1.0.0) is now part of the [NIST Public Data Repository](https://data.nist.gov/od/id/mds2-3802).
 
